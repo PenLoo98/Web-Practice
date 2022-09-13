@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+    <script>
+        // h1 태그의 배경 색상을 변경합니다.
+        document.querySelector('h1').style.backgroundColor = 'red';
+
+        // h2 태그의 글자 색상을 변경합니다.
+        document.querySelector('h2').style.color = 'red';
+    </script>
+</body>
+</html>
+
+<!-- script가 head파일 보다 먼저 생성되면 안된다 
+그러니 body에 script가 들어가야 한다. 아니면 13-5처럼 이벤트 처리를 해야함 -->

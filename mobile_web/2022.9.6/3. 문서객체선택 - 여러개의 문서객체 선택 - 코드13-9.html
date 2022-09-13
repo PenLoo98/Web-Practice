@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dom Basic</title>
+    <script>
+        //이벤트를 연결합니다.
+        window.onload = function(){
+            //문서 객체를 선택합니다.
+            var headers = document.querySelectorAll('h1');
+            
+            for (var i = 0; i < headers.length; i++){
+                //변수를 선언합니다
+                var header = headers[i];
+
+                //문서 객체를 조작합니다
+                header.style.color = 'orange';
+                header.style.background = 'red';
+                header.innerHTML = 'From JavaScript';
+            } 
+        };
+    </script>
+</head>
+<body>
+    <h1> Header</h1>
+    <h1> Header</h1>
+    <h1> Header</h1>
+</body>
+</html>
+
+<!-- 3개의 Header 모두 색상 변경이 적용되었다 대신 글자가 'Header'가 아닌 'FromJavaScript'로 변경된다 -->
+<!-- header안에 구문이 아니라 이벤트 처리한 내용이 대신 들어간다 -->

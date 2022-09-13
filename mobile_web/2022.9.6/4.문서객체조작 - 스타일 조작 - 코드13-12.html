@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>DOM Basic</title>
+    <script>
+        //이벤트를 변경합니다
+        window.onload = function(){
+            //문서 객체를 추가합니다.
+            var output = '';
+            for (var i = 0; i < 256; i++){
+                output += '<div></div>';
+            }
+            document.body.innerHTML = output;
+
+            //문서 객체를 선택합니다
+            var divs = document.querySelectorAll('div');
+            for (var i = 0; i < divs < length, i++;){
+                // 변수를 선언합니다
+                var div = divs[i];
+
+                // 스타일을 적용합니다.
+                div.style.height = '2px';
+                div.style.background = 'rgb(' + i + '.' + i + '.'+ i + ')'; 
+            }
+
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- div태그는 블록태그.
+블록태그는 한행을 다 쓴다. + 수직방향으로 확장된다? -->
+<!-- 256개의 div태그가 위에서 아래로 그레이디언트를 표현 -->
