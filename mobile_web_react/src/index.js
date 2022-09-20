@@ -1,18 +1,49 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import TodayWorkList from './chapter_06/TodayWorkList';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Restaurant from './chapter_03/ch.3 ex_restaurant/Restaurant';
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    {/* 실행시 렌더링 하는 부분  */}
-    < Restaurant/>
-  </React.StrictMode>
+    <TodayWorkList/>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <NotificationList/>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// )
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <CommentList/>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render( 
+//   <React.StrictMode>
+//     {/* 실행시 렌더링 하는 부분  */}
+//     < Clock/>
+//   </React.StrictMode>
+// );
+
+
+// setInterval(()=>{
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       <Clock/>
+//     </React.StrictMode>,
+//     document.getElementById('root')
+//   );
+// }, 1000);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
