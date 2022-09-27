@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TodayWorkList from './chapter_06/TodayWorkList';
 import './index.css';
+import TodayWorkList from './chapter_06/TodayWorkList';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
