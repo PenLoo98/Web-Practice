@@ -1,30 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ConfirmButton from './chapter_08/ConfirmButton';
+// import AccommodateString from './chapter_07/AccommodateString';
+
+
 import './index.css';
-import TodayWorkList from './chapter_06/TodayWorkList';
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
-  <React.StrictMode>
-    <TodayWorkList/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <React.StrictMode>
+      <ConfirmButton/>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+  
+  // ReactDOM.render(
+  //   <React.StrictMode>
+  //     <AccommodateString/>
+  //   </React.StrictMode>,
+  //   document.getElementById('root')
+  // );
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <NotificationList/>
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// )
-
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <CommentList/>
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( 
