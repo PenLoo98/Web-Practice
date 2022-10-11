@@ -1,28 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ConfirmButton from './chapter_08/ConfirmButton';
-// import AccommodateString from './chapter_07/AccommodateString';
-
-
+import NumberList from './chapter_10/NumberList';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
     <React.StrictMode>
-      <ConfirmButton/>
+      <NumberList/>
     </React.StrictMode>,
-    document.getElementById('root')
+    // document.getElementById('root')
   );
   
-  // ReactDOM.render(
-  //   <React.StrictMode>
-  //     <AccommodateString/>
-  //   </React.StrictMode>,
-  //   document.getElementById('root')
-  // );
-
-
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( 
 //   <React.StrictMode>
@@ -30,7 +19,6 @@ ReactDOM.render(
 //     < Clock/>
 //   </React.StrictMode>
 // );
-
 
 // setInterval(()=>{
 //   ReactDOM.render(
@@ -40,7 +28,6 @@ ReactDOM.render(
 //     document.getElementById('root')
 //   );
 // }, 1000);
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
