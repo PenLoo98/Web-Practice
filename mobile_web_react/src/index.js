@@ -1,16 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NumberList from './chapter_10/NumberList';
+import ProfileCard from './chapter_13/5. Card Component/ProfileCard';
+
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
+
 ReactDOM.render(
-    <React.StrictMode>
-      <NumberList/>
+  <React.StrictMode>
+      <ProfileCard/>
     </React.StrictMode>,
-    // document.getElementById('root')
+    document.getElementById('root')
   );
+
+// Input Null Value
+
+// ReactDOM.render( <input value={h1}/>, rootNode);
+
+// setTimeout(function(){
+//   ReactDOM.render(<input value={null} />, rootNode);
+// }, 1000);
   
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( 
@@ -20,14 +30,6 @@ ReactDOM.render(
 //   </React.StrictMode>
 // );
 
-// setInterval(()=>{
-//   ReactDOM.render(
-//     <React.StrictMode>
-//       <Clock/>
-//     </React.StrictMode>,
-//     document.getElementById('root')
-//   );
-// }, 1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

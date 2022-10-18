@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.FancyBorder{
+  /* border-width: 100px; */
+  border: solid 10px blue;
+  /* border-type: solid; */
+}
+
+

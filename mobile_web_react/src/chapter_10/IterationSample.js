@@ -23,30 +23,12 @@ const IterationSample = () => {
     setInputText('');
     console.log("생성된 ID: ", {nextId})
     };
-
-    // filter함수로 분류하고 싶은 조건을 반환
-    // const onRemove = id => {
-    //     const nextNames = names.filter(name => name.id !== id);
-    //     setNames(nextNames);
-    //     console.log("   삭제된 ID: ", {id})
-    // };
     
     const onRemove = (id) => {
         setNextId(nextId - 1);
         setNames(names.filter(name => name.id !== id));
         console.log("   삭제된 ID: ", {id})
     };
-
-    
-
-    
-    // const nameList = names.map(name => <li>{name}</li>);
-    // const nameList = names.map((name, index) => <li key={index}>{name}</li>)
-    // const nameList = names.map(name => <li key={name.id}>{name.text}</li>);
-
-    // const nameList = names.map(name => (
-    //     <li key={name.id} onDoubleClick={()=> onRemove(name.id)}> {name.text} </li>
-    //     ));
 
     const nameList = names.map(name => (
         <div>
@@ -56,10 +38,7 @@ const IterationSample = () => {
                  <button onClick={()=>onRemove(name.id)}>삭제</button> 
             </li>    
         </div>
-
         ));
-        
-
     return( 
     <>
     <input value={inputText} onChange={onChange} />
@@ -70,5 +49,4 @@ const IterationSample = () => {
     </>
     );
 };
-
 export default IterationSample;
