@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ProfileCard from './chapter_13/5. Card Component/ProfileCard';
-
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
+import Blocks from './chapter_15/Blocks';
+
 
 ReactDOM.render(
   <React.StrictMode>
-      <ProfileCard/>
+      <Blocks/>
     </React.StrictMode>,
     document.getElementById('root')
   );

@@ -4,34 +4,26 @@ import Card from "./Card2";
 // 추가할 것 : 카드의 이미지와 다른 색 넣기(초록색 이외에)
 
 function ProfileCard2(props){
-    const profiles ={
-        "Inje Lee": {
-            name: "Inje Lee",
-            description: "안녕하세요, 소플입니다.",
-            image: "https://avatars.githubusercontent.com/u/68719429?v=4",
-            backgroundColor: "green",
-        },
-        "리누스 토발즈": {
-            name: "리누스 토발즈",
-            description: "리누스 토발즈는 리눅스 커널을 만든 사람입니다.",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Linus_Torvalds_OSCON_2014.jpg/220px-Linus_Torvalds_OSCON_2014.jpg",
-            backgroundColor: "red",
-        },
-        "빌 게이츠": {
-            name: "빌 게이츠",
-            description: "빌 게이츠는 마이크로소프트를 만든 사람입니다.",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Bill_Gates_June_2015.jpg/220px-Bill_Gates_June_2015.jpg",
-            backgroundColor: "blue",
-        },
-    
-    };
-
+   
     return (
-        <Card title={profiles.keys} backgroundColor={profiles.backgroundColor}>
-            <img src={props.image} alt="profile" className="profile"/>
-            <p>{props.name}</p>
-            <p>{props.description}</p>
+        <div>
+        <Card title="빌 게이츠" backgroundColor="yellow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Bill_Gates_2014.jpg/220px-Bill_Gates_2014.jpg" 
+                alt="profile" className="profile"/>
+            <p>빌 게이츠는 마이크로소프트를 만든 사람입니다.</p>
         </Card>
+        <Card title="리누스 토발즈" backgroundColor="green">
+            <img src="data:image/jpeg;base64,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"
+                alt="profile" className="profile"/>
+            <p>리누스 토발즈는 리눅스 커널을 만든 사람입니다.</p>
+        </Card>
+        <Card title="스티브 잡스" backgroundColor="blue">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg/225px-Steve_Jobs_Headshot_2010-CROP2.jpg"
+                alt="profile" className="profile"/>
+            <p>스티브 잡스는 애플을 만든 사람입니다.</p>
+        </Card>
+        </div>
+       
     );
 }
 

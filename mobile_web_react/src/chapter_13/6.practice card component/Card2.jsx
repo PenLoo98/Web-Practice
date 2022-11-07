@@ -3,10 +3,6 @@ import React from "react";
 function Card2(props) {
     const{ title, backgroundColor, children} = props;
 
-    
-    
-
-
     return(
         <div
             style={{
